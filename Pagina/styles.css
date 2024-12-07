@@ -1,0 +1,248 @@
+/* General body settings */
+
+/* Contenedor de la galería */
+.gallery-container {
+  width: 100%; /* Ajusta el ancho del contenedor */
+  overflow-x: auto; /* Activa el scroll horizontal */
+  margin: 20px 0; /* Márgenes alrededor */
+}
+
+/* Contenedor interno de las imágenes (en fila) */
+.gallery {
+  display: flex; /* Hace que las imágenes estén en fila */
+  gap: 20px; /* Espacio entre imágenes */
+  padding: 10px 0; /* Espaciado interior */
+}
+
+/* Estilo de cada imagen */
+.gallery-item {
+  width: 50%; /* Cada imagen ocupa el 50% del ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+}
+/* Contenedor de la galería */
+.gallery-container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 20px 0;
+}
+
+/* Estilo para la galería (flexbox) */
+.gallery {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease; /* Transición suave */
+}
+
+/* Estilo de cada imagen */
+.gallery-item {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease-in-out; /* Efecto hover suave */
+}
+
+/* Efecto hover en las imágenes */
+.gallery-item:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el cursor */
+}
+
+/* Estilo para las flechas de navegación */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Estilo para ocultar las flechas cuando el mouse no está sobre el contenedor */
+.gallery-container:hover .prev,
+.gallery-container:hover .next {
+  opacity: 1;
+}
+
+.prev, .next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4; /* Gris oscuro */
+  color: black; /* Texto blanco para mayor contraste */
+  }
+  
+  /* Barra de título */
+  .header {
+    background-color: #4B0082;  /* Color morado oscuro */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  /* Logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  /* Barra de navegación */
+  .nav-bar {
+    background-color: #6A0DAD;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  
+  .nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-bar a:hover {
+    background-color: #D8BFD8;
+    color: #4B0082;
+  }
+  
+  /* Sección de imagen */
+  .image-section {
+    margin-top: 20px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #4B0082;
+  }
+  
+  /* Acerca de mí */
+  .about-me {
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 800px;
+  }
+  
+  .about-me h2 {
+    font-size: 1.5rem;
+    color: #4B0082;
+  }
+  
+  /* Mis fortalezas */
+  .strengths {
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 800px;
+  }
+  
+  .strengths h2 {
+    font-size: 1.5rem;
+    color: #4B0082;
+  }
+  
+  .strengths ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .strengths li {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+  }
+  
+  /* Trabajos */
+  .work {
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 800px;
+  }
+  
+  .work h2 {
+    font-size: 1.5rem;
+    color: #4B0082;
+  }
+  
+  .work-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Formulario de contacto */
+  .contact-form {
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 800px;
+  }
+  
+  .contact-form h2 {
+    font-size: 1.5rem;
+    color: #4B0082;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: #4B0082;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #6A0DAD;
+  }
+  

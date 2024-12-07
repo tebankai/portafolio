@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Duck Coding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Verifica que esta ruta esté correcta -->
+  <link rel="icon" href="logoblanco.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Barra de título -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="logoblanco.png" alt="Logo" class="logo"> <!-- Ruta al logo -->
+      <h1>Future Duck Coding</h1>
+    </div>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="nav-bar">
+    <a href="https://github.com/tebankai" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/erojash/" target="_blank">LinkedIn</a>
+  </nav>
+
+  <!-- Espacio para la imagen -->
+  <section class="image-section">
+    <img src="manos.png" alt="Imagen de perfil" class="profile-image">
+  </section>
+
+  <!-- Acerca de mí -->
+  <section class="about-me">
+    <h2>Acerca de mí</h2>
+    <p>Desarrollador de Software y Web con experiencia en la creación y optimización de aplicaciones robustas y escalables. Hábil en el uso de tecnologías modernas en frontend y backend para construir soluciones de alto rendimiento que mejoran la experiencia del usuario. Orientado a los detalles y enfocado en la resolución de problemas, con una capacidad comprobada para trabajar en equipo y entregar proyectos a tiempo. Comprometido con la mejora continua y apasionado por mantenerse actualizado con las tendencias de la industria.</p>
+  </section>
+
+  <!-- Mis fortalezas -->
+  <section class="strengths">
+    <h2>Mis fortalezas</h2>
+    <ul>
+      <li>Experiencia en desarrollo de software</li>
+      <li>Experiencia en tecnologías web</li>
+      <li>Trabajo en equipo y eficiencia</li>
+    </ul>
+  </section>
+
+   <!-- Trabajos -->
+   <section class="work">
+    <h2>Pagina ICT</h2>
+    <div class="work-image">
+    </div>
+    <p>Este proyecto constaba en generar una página para aumentar el turismo y generarle más ingresos al ICT a lugares avalados por este. Tenía un servicio de búsqueda de reservas y para ver los detalles de los lugares donde se puede rentar.</p>
+  </section>
+  <div class="gallery-container">
+    <button class="prev" onclick="moveGallery(-1)">&#10094;</button>
+    <div class="gallery">
+      <img src="home.png" alt="Imagen 2" class="gallery-item">
+      <img src="servicios.png" alt="ICT" class="gallery-item">
+      <img src="revisarreservas.png" alt="Imagen3" class="gallery-item">
+      
+    
+      <!-- Agrega más imágenes según sea necesario -->
+    </div>
+    <button class="next" onclick="moveGallery(1)">&#10095;</button>
+
+  </div>
+  
+ 
+
+  <!-- Formulario de contacto -->
+  <section class="contact-form">
+    <h2>Contacto</h2>
+    <form action="send_email.php" method="POST">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+    
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+    
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+      <br>
+    
+      <button type="submit">Enviar</button>
+    </form>
+    
+  </section>
+  <footer style="text-align: center; padding: 20px; background-color: #333; color: white;">
+    <!-- Enlace a LinkedIn -->
+    <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" style="margin: 0 15px; color: white; text-decoration: none;">
+      <i class="fab fa-linkedin fa-2x"></i>
+    </a>
+    
+    <!-- Enlace a Facebook -->
+    <a href="https://www.facebook.com/futurecoding" target="_blank" style="margin: 0 15px; color: white; text-decoration: none;">
+      <i class="fab fa-facebook fa-2x"></i>
+    </a>
+  </footer>
+  
+</body>
+</html>
